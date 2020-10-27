@@ -1,0 +1,16 @@
+{
+  "localaddr": ":56265",
+  "remoteaddr": "127.0.0.1:30002",
+  "key": "Ease#Proxy",
+  "crypt": "aes",
+  "mode": "fast",
+  "mtu": 1350,
+  "sndwnd": 512,
+  "rcvwnd": 512,
+  "datashard": 10,
+  "parityshard": 3,
+  "dscp": 0,
+  "nocomp": true,
+  "quiet": false,
+  "tcp": false
+}
