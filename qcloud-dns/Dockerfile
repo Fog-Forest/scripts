@@ -2,7 +2,7 @@ FROM python:3.7
 
 MAINTAINER kinoko
 
-ADD ./* /code
+ADD ./code /code
 WORKDIR /code
 
 # 安装运行库
