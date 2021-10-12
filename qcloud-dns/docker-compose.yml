@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  qcloud-dns:
+    image: qcloud-dns
+    container_name: qcloud-dns
+    hostname: qcloud-dns
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
