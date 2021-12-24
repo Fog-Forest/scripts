@@ -1,6 +1,6 @@
 FROM python:3.7
 
-MAINTAINER kinoko
+MAINTAINER kinoko <admin@amogu.cn>
 
 ADD ./code /code
 WORKDIR /code

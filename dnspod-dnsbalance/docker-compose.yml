@@ -1,10 +1,10 @@
 version: '3'
 services:
 
-  qcloud-dns:
-    image: qcloud-dns
-    container_name: qcloud-dns
-    hostname: qcloud-dns
+  dnsbalance:
+    image: dnsbalance
+    container_name: dnsbalance
+    hostname: dnsbalance
     restart: always
     environment:
       - TZ=Asia/Shanghai
