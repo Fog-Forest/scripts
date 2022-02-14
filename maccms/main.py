@@ -9,10 +9,10 @@ import pymysql
 mjj = []
 
 # 数据库连接信息
-DBHost = "43.132.253.214"
-DBName = "movie"
-DBUser = "movie"
-DBPasswd = "KKemSiHne3BKjSxR"
+DBHost = "127.0.0.1"
+DBName = "maccms"
+DBUser = "maccms"
+DBPasswd = "db-password"
 # 关键字替换信息
 # 地域
 area_replace_words1 = {" / ": ",", "/": ",", "，": ",", "日韩地区": "日本,韩国", "日韩": "日本,韩国", "欧美其他": "美国,其他",
