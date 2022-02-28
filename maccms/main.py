@@ -92,7 +92,8 @@ def update_vod_data(vod_id, vod_area, vod_class):
     db = pymysql.connect(host=DBHost, user=DBUser, password=DBPasswd, database=DBName)
     cursor = db.cursor()
     # SQL 更新语句
-    sql = ""
+    sql = 'UPDATE mac_vod SET vod_class="' + vod_class + '",vod_area="' + vod_area +'" WHERE vod_id=' + str(vod_id)
+    print(sql)
     try:
         cursor.execute(sql)
         # 提交到数据库执行
