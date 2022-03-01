@@ -75,7 +75,7 @@ def get_vod_data():
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
     # SQL 查询语句
-    sql = "SELECT vod_id,vod_class,vod_area FROM mac_vod"
+    sql = "SELECT vod_id,vod_class,vod_area FROM mac_vod ORDER BY vod_id DESC"
     try:
         cursor.execute(sql)
         # 获取所有记录列表
@@ -89,10 +89,21 @@ def get_vod_data():
 
 # 更新扩展分类数据
 def update_vod_data(vod_id, vod_area, vod_class):
+    # 如果地域信息为空则作为“其他”处理
+    if vod_area == "":
+        vod_area = "其他"
+    else:
+        pass
+    # 如果扩展分类信息为空则作为“其他”处理
+    if vod_class == "":
+        vod_class = "其他"
+    else:
+        pass
+
     db = pymysql.connect(host=DBHost, user=DBUser, password=DBPasswd, database=DBName)
     cursor = db.cursor()
     # SQL 更新语句
-    sql = 'UPDATE mac_vod SET vod_class="' + vod_class + '",vod_area="' + vod_area +'" WHERE vod_id=' + str(vod_id)
+    sql = 'UPDATE mac_vod SET vod_class="' + vod_class + '",vod_area="' + vod_area + '" WHERE vod_id=' + str(vod_id)
     print(sql)
     try:
         cursor.execute(sql)
