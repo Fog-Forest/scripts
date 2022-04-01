@@ -34,7 +34,9 @@ $mail->addAddress('ellen@example.com');                     //设置收件人邮
 $mail->isHTML(true);                                        //是否为HTML格式
 //$mail->Subject = 'Here is the subject';                                       // 邮件标题
 //$mail->Body    = 'This is the HTML message body <b>in bold!</b>';             // 邮件内容
+
 $mail->Subject = $title;
+//邮件模板
 $mail->Body    = <<<EOF
 <div
     style="border-radius:5px;font-size:13px;width:680px;font-family:微软雅黑,'Helvetica Neue',Arial,sans-serif;margin:10px auto 0px;border:1px solid #eee;max-width:100%;">
