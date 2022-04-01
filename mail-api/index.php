@@ -12,9 +12,11 @@ $title      = $_GET['title'];    //获取邮件标题
 $content    = $_GET['content'];  //获取邮件正文
 
 $mail = new PHPMailer();
-//SMTP配置，请修改 Host\Username\Password\SMTPSecure\Port 为你的邮箱服务商信息
+//SMTP配置，请修改 Host|Username|Password|SMTPSecure|Port 为你的邮箱服务商信息
 $mail->SMTPDebug  = 0;                                      //E//Enable SMTP debugging, SMTP::DEBUG_OFF = off (for production use)
 $mail->isSMTP();                                            //Send using SMTP
+$mail->CharSet    = "UTF-8";                                //GBK|GB2312
+$mail->Encoding   = "base64";
 $mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 $mail->Username   = 'user@example.com';                     //SMTP username
@@ -26,7 +28,7 @@ $mail->Port       = 465;                                    //TCP port to connec
 $mail->setFrom('from@example.com', $nickname);              //设置发件人信息
 $mail->addAddress($address);                                //设置收件人邮箱地址
 //$mail->addAddress('joe@example.net', 'Joe User');         //收件人昵称可选
-//$mail->addReplyTo('info@example.com', 'Information');     //设置邮件的回复地址
+//$mail->addReplyTo('info@example.com', 'Information');     //自定义邮件的回复地址
 
 //附件
 //$mail->addAttachment('/var/tmp/file.tar.gz');             //添加邮件附件
@@ -37,8 +39,8 @@ $mail->isHTML(true);                                        //是否为HTML格�
 //$mail->Subject = 'Here is the subject';                                       // 邮件标题示例
 //$mail->Body    = 'This is the HTML message body <b>in bold!</b>';             // 邮件内容示例
 
+//邮件模板使用示例
 $mail->Subject = $title;
-//邮件模板示例
 $mail->Body    = <<<EOF
 <div
     style="border-radius:5px;font-size:13px;width:680px;font-family:微软雅黑,'Helvetica Neue',Arial,sans-serif;margin:10px auto 0px;border:1px solid #eee;max-width:100%;">
