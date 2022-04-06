@@ -160,6 +160,23 @@ def data_process(data, task_type):
     return words_str
 
 
+# 执行任意SQL语句，用于一些常规数据库替换操作
+def run_sql(sql):
+    db = pymysql.connect(host=DBHost, user=DBUser, password=DBPasswd, database=DBName)
+    # 使用cursor()方法获取操作游标
+    cursor = db.cursor()
+    try:
+        # 执行SQL语句
+        cursor.execute(sql)
+        # 提交到数据库执行
+        db.commit()
+    except:
+        # 发生错误时回滚
+        db.rollback()
+    # 关闭数据库连接
+    db.close()
+
+
 # MAIN
 def main():
     results = get_vod_data()
