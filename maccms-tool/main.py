@@ -131,7 +131,6 @@ class MacCMS:
         result = cls.__select_db()
         for data in result:  # 遍历视频数据
             sql = cls.__replace_word(data)
-            print(sql)
             cls.update_db(sql)
 
 
