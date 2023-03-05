@@ -3,7 +3,7 @@ set -e
 
 # speedtest
 if [ $SPEEDTEST_INTERVAL ]; then
-    # 生成 crontab 表达式
+    # create crontab
     if [ $SPEEDTEST_INTERVAL -eq 0 ]; then
         echo "Interval is 0, no task will be created"
     elif [ $SPEEDTEST_INTERVAL -le 59 ]; then
@@ -25,10 +25,19 @@ else
 fi
 
 # lookbusy
-MemTotal=$(awk '($1 == "MemTotal:"){printf "%d\n",$2/1024}' /proc/meminfo)
-if [ $MEM_UTIL ]; then
-    MemUsage=$(($MemTotal / 100 * $MEM_UTIL))
-    lookbusy -c $CPU_UTIL -r curve -m ${MemUsage}MB
+MemTotal=$(awk '($1 == "MemTotal:"){printf "%d\n",$2/1024}' /proc/meminfo) # total memory
+if [ $CPU_CORE ]; then
+    if [ $MEM_UTIL ]; then
+        MemUsage=$(($MemTotal / 100 * $MEM_UTIL))
+        lookbusy -c $CPU_UTIL -n $CPU_CORE -m ${MemUsage}MB
+    else
+        lookbusy -c $CPU_UTIL -n $CPU_CORE
+    fi
 else
-    lookbusy -c $CPU_UTIL -r curve
+    if [ $MEM_UTIL ]; then
+        MemUsage=$(($MemTotal / 100 * $MEM_UTIL))
+        lookbusy -c $CPU_UTIL -r curve -m ${MemUsage}MB
+    else
+        lookbusy -c $CPU_UTIL -r curve
+    fi
 fi

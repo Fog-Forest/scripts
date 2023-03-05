@@ -1,6 +1,6 @@
 version: '3'
-services:
 
+services:
   lookbusy:
     image: fogforest/lookbusy:latest
     container_name: lookbusy
@@ -8,6 +8,7 @@ services:
     restart: always
     environment:
       - TZ=Asia/Shanghai
-      - CPU_UTIL=10-20 # CPU占用，单位%
-      - MEM_UTIL=15 # 内存占用，单位%
-      - SPEEDTEST_INTERVAL=120 # 网络测速间隔，单位分钟，不跑网络可以省略此条
+      - CPU_UTIL=50 # CPU占用，单位%，不可省略，支持固定值或范围
+      - CPU_CORE=1 # CPU占用核心数，不指定默认跑全核，出现CPU打满的情况可以指定为1核
+      - MEM_UTIL=50 # 内存占用，单位%，不跑内存可省略
+      - SPEEDTEST_INTERVAL=120 # 网络测速间隔，单位分钟，不跑网络可省略
