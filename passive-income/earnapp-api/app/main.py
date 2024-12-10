@@ -86,6 +86,6 @@ if __name__ == "__main__":
     threading.Thread(target=process_uuids, daemon=True).start()
 
     # 自定义端口设置
-    port = int(os.getenv("PORT", 3000))  # 默认端口为 5000
+    port = int(os.getenv("PORT", 5000))  # 默认端口为 5000
     # 启动 Flask 应用程序
     app.run(host="0.0.0.0", port=port, debug=False, threaded=True)
