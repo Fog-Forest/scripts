@@ -15,7 +15,6 @@
 7. [Honeygain](https://r.honeygain.me/YE898D03EA)
 
 ### 收益截图
-![](https://g.gtimg.cn/music/photo_new/T053XD01003KeqRw4H20qk.png)
 ![](https://g.gtimg.cn/music/photo_new/T053XD01004dqONe3aC9ry.png)
 ![](https://g.gtimg.cn/music/photo_new/T053XD010016Nzyn3a79ql.png)
 ![](https://g.gtimg.cn/music/photo_new/T053XD01003NTE9P0F0z9u.png)

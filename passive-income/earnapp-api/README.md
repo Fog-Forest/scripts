@@ -15,8 +15,6 @@ docker run -d \
   -e XSRF_TOKEN="your_token" \
   -e OAUTH_REFRESH_TOKEN="your_token" \
   fogforest/earnapp-api
-
-
 ```
 
 ```bash
