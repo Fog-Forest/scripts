@@ -5,7 +5,7 @@
 我将这些项目的二进制文件提取出来，并打包成一个容器，方便部署。值得一提的是，这些项目对资源的占用非常低，主要消耗的是网络流量，而流量的消耗量也很小。
 
 ### 对接平台
-目前支持以下平台（由高到低排序），经过亲自测试，收益表现良好。我已剔除一些收益较低或无法注册的平台，国内 IP 也适用，支持 PayPal 提现。
+目前支持以下平台（推荐性由高到低排序），经过亲自测试，收益表现良好。已剔除一些收益较低或无法注册的平台，国内 IP 也适用，支持 PayPal 提现。
 1. [Traffmonetizer](https://traffmonetizer.com/?aff=1796253)
 2. [Repocket](https://tlink.repocket.com/q9ly)
 3. [PacketStream](https://packetstream.io/?psr=6pdw)
