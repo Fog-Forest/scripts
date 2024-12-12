@@ -10,8 +10,7 @@
 2. [Repocket](https://tlink.repocket.com/q9ly)
 3. [PacketStream](https://packetstream.io/?psr=6pdw)
 4. [Pawns](https://pawns.app/?r=9840918)
-5. [EarnAPP](https://earnapp.com/i/KLRKznW1)
-6. [Honeygain](https://r.honeygain.me/YE898D03EA)
+5. [Honeygain](https://r.honeygain.me/YE898D03EA)
 
 ### 收益截图
 ![](https://g.gtimg.cn/music/photo_new/T053XD01004dqONe3aC9ry.png)
