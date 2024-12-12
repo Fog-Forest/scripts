@@ -18,10 +18,10 @@ IP 风险，还可能导致被删机。
 
 剔除的平台
 
-- EarnFM: ❌ 国内IP不支持
+- EarnFM: ❌ 国内IP不支持，IP要求高
 - Proxyrack: ❌ 国内IP不支持，部署麻烦
 - Peer2Profit: ❌ 新用户停止注册
-- EarnApp: ❌ 只要住宅IP，收益感人
+- EarnApp: ❌ 收益感人，只要住宅IP
 - PacketShare: ❌ 收益感人
 - SpeedShare: ❌ 只支持礼品卡提现
 
