@@ -10,11 +10,11 @@ IP 风险，还可能导致被删机。
 
 目前支持以下平台（推荐性由高到低排序），经过亲自测试，收益表现良好。已剔除一些收益较低或无法注册的平台，国内IP也适用，支持PayPal提现。
 
-1. [Repocket](https://tlink.repocket.com/q9ly): ✅ Docker&宿主机，PalPay提现
+1. [Repocket](https://tlink.repocket.com/q9ly): ✅ Docker&宿主机，PayPal提现
 2. [Traffmonetizer](https://traffmonetizer.com/?aff=1796253): ✅ Docker，USDT提现
-3. [PacketStream](https://packetstream.io/?psr=6pdw): ✅ Docker，PalPay提现
-4. [Pawns](https://pawns.app/?r=9840918): ✅ Docker&宿主机，PalPay提现
-5. [Honeygain](https://r.honeygain.me/YE898D03EA): ✅ Docker&宿主机，PalPay提现
+3. [PacketStream](https://packetstream.io/?psr=6pdw): ✅ Docker，PayPal提现
+4. [Pawns](https://pawns.app/?r=9840918): ✅ Docker&宿主机，PayPal提现
+5. [Honeygain](https://r.honeygain.me/YE898D03EA): ✅ Docker&宿主机，PayPal提现
 
 剔除的平台
 
