@@ -21,7 +21,7 @@ IP 风险，还可能导致被删机。
 - EarnFM: ❌ 国内IP不支持，IP要求高
 - Proxyrack: ❌ 国内IP不支持，部署麻烦
 - Peer2Profit: ❌ 新用户停止注册
-- EarnApp: ❌ 收益感人，只要住宅IP
+- EarnApp: ❌ 收益感人，只能宿主机且仅住宅IP
 - PacketShare: ❌ 收益感人
 - SpeedShare: ❌ 只支持礼品卡提现
 
