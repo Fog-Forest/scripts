@@ -1,7 +1,6 @@
 FROM python:3.9-alpine
 LABEL authors="Kinoko"
 
-# 复制应用代码
 COPY ./app /app
 WORKDIR /app
 

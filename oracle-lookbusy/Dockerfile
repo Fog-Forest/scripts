@@ -1,8 +1,7 @@
-FROM --platform=$TARGETPLATFORM debian:11
-LABEL org.opencontainers.image.authors="Kinoko"
+FROM debian:12
+LABEL authors="Kinoko"
 
 COPY ./app /app
-
 WORKDIR /app
 
 RUN apt update \

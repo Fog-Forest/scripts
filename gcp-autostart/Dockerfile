@@ -1,12 +1,13 @@
 FROM python:3.9-alpine
 LABEL authors="Kinoko"
 
-# 复制应用代码
-COPY ./app /app
 WORKDIR /app
+COPY ./app/* .
 
 # 安装依赖
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apk update \
+    && apk add --no-cache build-base g++ linux-headers \
+    && pip install --no-cache-dir -r requirements.txt \
+    && apk del build-base linux-headers
 
-# 运行命令
 CMD ["python", "main.py"]
