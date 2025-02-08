@@ -18,11 +18,11 @@ IP 风险，还可能导致被删机。
 
 剔除的平台
 
-- EarnFM: ❌ 国内IP不支持，IP要求高
-- EarnApp: ❌ 收益感人，严禁Docker和虚拟机
+- EarnApp: ❌ 严禁Docker和虚拟机
+- EarnFM: ❌ 收益感人，国内IP不支持
 - PacketShare: ❌ 收益感人
-- Proxyrack: ❌ 国内IP不支持，部署麻烦
-- Peer2Profit: ❌ 新用户停止注册
+- Peer2Profit: ❌ 新用户无法注册
+- Proxyrack: ❌ 部署复杂，国内IP不支持
 - SpeedShare: ❌ 只支持礼品卡提现
 
 ### 收益截图
