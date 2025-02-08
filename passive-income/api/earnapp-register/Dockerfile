@@ -1,4 +1,4 @@
-FROM --platform=$TARGETPLATFORM python:3.9-alpine
+FROM python:3.9-alpine
 LABEL authors="Kinoko"
 
 # 复制应用代码
