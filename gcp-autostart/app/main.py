@@ -14,8 +14,7 @@ from google.cloud import compute_v1
 # 环境变量配置
 KEY_PATH = os.getenv("GCP_KEY_PATH", "/app/key")
 LOOP_INTERVAL = int(os.getenv("GCP_LOOP_INTERVAL", "300"))  # 循环间隔秒数
-DEFAULT_TIMEOUT = int(os.getenv("GCP_TIMEOUT", "300"))
-SLEEP_INTERVAL = int(os.getenv("GCP_SLEEP_INTERVAL", "5"))
+DEFAULT_TIMEOUT = int(os.getenv("GCP_TIMEOUT", "30"))
 
 
 def load_gcp_credentials() -> List[Dict]:
@@ -71,11 +70,13 @@ def wait_for_operation(project_id: str, zone: str, instance_name: str, operation
 
     while time.time() - start_time < DEFAULT_TIMEOUT:
         operation = operation_client.get(project=project_id, zone=zone, operation=operation_name)
+        if operation.status == "RUNNING":
+            return
         if operation.status == "DONE":
             if operation.error:
                 raise RuntimeError(f"操作失败: {operation.error}")
             return
-        time.sleep(SLEEP_INTERVAL)
+        time.sleep(5)
     raise TimeoutError("操作超时")
 
 

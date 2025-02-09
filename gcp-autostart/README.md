@@ -7,7 +7,8 @@
 
 mkdir /root/key # 密钥文件放到 /root/key 里面
 docker run -d --name gcp-autostart \
-    -e KEY_PATH=/app/key \
+    -e GCP_KEY_PATH=/app/key \
+    -e GCP_LOOP_INTERVAL=300 \ 
     -v /root/key:/app/key \
     fogforest/gcp-autoboot
 ```
