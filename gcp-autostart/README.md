@@ -10,7 +10,7 @@ docker run -d --name gcp-autostart \
     -e GCP_KEY_PATH=/app/key \
     -e GCP_LOOP_INTERVAL=300 \ 
     -v /root/key:/app/key \
-    fogforest/gcp-autoboot
+    fogforest/gcp-autostart
 ```
 
 ## 查看日志
