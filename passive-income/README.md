@@ -9,24 +9,26 @@
 
 目前支持以下平台（推荐性由高到低排序），经过亲自测试，收益表现良好。已剔除一些收益较低或无法注册的平台，国内IP也适用，支持PayPal提现。
 
-1. [Honeygain](https://r.honeygain.me/YE898D03EA): ✅ Docker&宿主机，PayPal提现
-2. [Pawns](https://pawns.app/?r=9840918): ✅ Docker&宿主机，PayPal提现
-3. [PacketStream](https://packetstream.io/?psr=6pdw): ✅ Docker，PayPal提现
-4. [Repocket](https://tlink.repocket.com/q9ly): ✅ Docker&宿主机，PayPal提现
-5. [Traffmonetizer](https://traffmonetizer.com/?aff=1796253): ✅ Docker，USDT提现
+
+1. [Pawns](https://pawns.app/?r=9840918): ✅ Docker&宿主机，PayPal提现
+2. [PacketStream](https://packetstream.io/?psr=6pdw): ✅ Docker，PayPal提现
+3. [Repocket](https://tlink.repocket.com/q9ly): ✅ Docker&宿主机，PayPal提现
+4. [Traffmonetizer](https://traffmonetizer.com/?aff=1796253): ✅ Docker，USDT提现
+5. [PacketShare](https://www.packetshare.io/?code=4D4955402D2625E7): ✅ Docker&宿主机，PayPal提现
 
 剔除的平台
 
 - EarnApp: ❌ 严禁Docker和虚拟机
 - EarnFM: ❌ 收益感人，国内IP不支持
+- Honeygain: ❌ 仅支持连接10台设备
 - Peer2Profit: ❌ 新用户无法注册
 - Proxyrack: ❌ 部署复杂，国内IP不支持
 - SpeedShare: ❌ 只支持礼品卡提现
 
 ### 收益截图
 
-![](https://g.gtimg.cn/music/photo_new/T053XD01004dqONe3aC9ry.png)
+![](https://y.gtimg.cn/music/photo_new/T053M000002AftbA2P0DNh.png)
 
-![](https://g.gtimg.cn/music/photo_new/T053XD010016Nzyn3a79ql.png)
+![](https://y.gtimg.cn/music/photo_new/T053M000001N8C9m4NrJK3.png)
 
-![](https://g.gtimg.cn/music/photo_new/T053XD01003NTE9P0F0z9u.png)
+![](https://y.gtimg.cn/music/photo_new/T053M0000040UPJj1scmqI.png)
