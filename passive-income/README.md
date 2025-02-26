@@ -14,13 +14,13 @@
 2. [PacketStream](https://packetstream.io/?psr=6pdw): ✅ Docker，PayPal提现
 3. [Repocket](https://tlink.repocket.com/q9ly): ✅ Docker&宿主机，PayPal提现
 4. [Traffmonetizer](https://traffmonetizer.com/?aff=1796253): ✅ Docker，USDT提现
-5. [PacketShare](https://www.packetshare.io/?code=4D4955402D2625E7): ✅ Docker&宿主机，PayPal提现
 
 剔除的平台
 
 - EarnApp: ❌ 严禁Docker和虚拟机
 - EarnFM: ❌ 收益感人，国内IP不支持
 - Honeygain: ❌ 仅支持连接10台设备
+- PacketShare: ❌ 国内IP收益极低
 - Peer2Profit: ❌ 新用户无法注册
 - Proxyrack: ❌ 部署复杂，国内IP不支持
 - SpeedShare: ❌ 只支持礼品卡提现
