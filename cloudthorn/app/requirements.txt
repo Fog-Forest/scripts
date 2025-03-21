@@ -1,0 +1,7 @@
+fastapi~=0.112.2
+uvicorn~=0.32.1
+playwright~=1.51.0
+playwright-stealth
+python-multipart
+pydantic~=2.10.3
+pydantic-settings~=2.6.1
