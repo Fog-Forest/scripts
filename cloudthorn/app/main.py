@@ -1,9 +1,8 @@
 import uvicorn
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-
 from app.config import settings
 from app.routers import api
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 
 def create_app() -> FastAPI:
@@ -11,9 +10,10 @@ def create_app() -> FastAPI:
         title=settings.APP_NAME,
         description=settings.APP_DESCRIPTION,
         version=settings.APP_VERSION,
-        docs_url="/docs" if settings.DEBUG else None,
-        openapi_url="/openapi.json" if settings.DEBUG else None,
-        redoc_url=None,
+        # 文档安全三连关闭
+        docs_url=None,  # 禁用Swagger UI (/docs)
+        redoc_url=None,  # 禁用ReDoc (/redoc)
+        openapi_url=None  # 禁用OpenAPI规范 (/openapi.json)
     )
 
     # 添加中间件

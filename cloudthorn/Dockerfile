@@ -1,16 +1,15 @@
-FROM python:3.9-alpine
+FROM python:3.10-slim
 
 # 设置标签和变量
 LABEL authors="Kinoko"
-ARG TARGETARCH
 
 # 设置工作目录
 COPY ./app /app
 WORKDIR /app
 
-RUN pip install --no-cache-dir -r requirements.txt && \
-    playwright install chromium && \
-    playwright install-deps
+RUN pip install --no-cache-dir -r requirements.txt \
+    && playwright install chromium \
+    && playwright install-deps
 
 
 ENTRYPOINT ["python", "mian.py"]

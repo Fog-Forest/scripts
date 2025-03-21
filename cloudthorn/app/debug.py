@@ -1,10 +1,9 @@
 # debug.py
 import asyncio
 
-from playwright.async_api import async_playwright
-
 from app.models.schema import RequestData
 from app.services.browser import handle_browser_request
+from playwright.async_api import async_playwright
 
 
 async def debug_browser():

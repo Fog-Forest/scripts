@@ -1,8 +1,7 @@
-from fastapi import APIRouter, HTTPException
-
 from app.config import settings
 from app.models.schema import RequestData
 from app.services import browser
+from fastapi import APIRouter, HTTPException
 
 router = APIRouter(prefix="/v1", tags=["API"])  # 配置路由前缀和标签
 

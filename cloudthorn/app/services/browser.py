@@ -1,10 +1,9 @@
-from fastapi import HTTPException
-from playwright.async_api import async_playwright
-from playwright_stealth import stealth_async
-
 from app.config import DEFAULT_CONFIG
 from app.models.schema import RequestData
 from app.utils import simulator, proxy
+from fastapi import HTTPException
+from playwright.async_api import async_playwright
+from playwright_stealth import stealth_async
 
 
 async def handle_browser_request(params: RequestData):
