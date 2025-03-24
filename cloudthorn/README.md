@@ -4,6 +4,27 @@
 
 ## 快速开始
 
+1. Docker Compose
+
+   ```yaml
+   version: "3"
+   
+   services:
+     cloudthorn:
+       image: fogforest/cloudthorn:latest
+       container_name: cloudthorn
+       hostname: cloudthorn
+       restart: always
+       environment:
+         - TZ=Asia/Shanghai
+         - API_PORT=8675
+       ports:
+         - "8675:8675"
+   
+   ```
+
+   
+
 ## API 文档
 
 1. 发送请求
@@ -22,7 +43,7 @@
      "header": {"User-Agent": "Custom Agent"},
      "maxTimeout": 30000
    }
-   ```
+    ```
 
     ```json
    # POST
@@ -33,7 +54,7 @@
      "data": "",
      "maxTimeout": 30000
    }
-   ```
+    ```
 
    响应示例 (成功):
 
