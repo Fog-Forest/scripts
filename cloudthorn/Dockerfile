@@ -7,10 +7,12 @@ LABEL authors="Kinoko"
 COPY ./app /app
 WORKDIR /app
 
+# Python库路径
+ENV PYTHONPATH=/
+
 RUN pip install --no-cache-dir -r requirements.txt \
     && playwright install chromium \
     && playwright install-deps
-
 
 ENTRYPOINT ["python", "main.py"]
 
