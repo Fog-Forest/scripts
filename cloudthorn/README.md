@@ -36,7 +36,6 @@
    请求示例:
 
     ```json
-   # GET
    {
      "method": "GET",
      "url": "https://www.baidu.com/",
@@ -46,7 +45,6 @@
     ```
 
     ```json
-   # POST
    {
      "method": "POST",
      "url": "https://www.baidu.com/",

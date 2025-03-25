@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt \
     && playwright install-deps
 
 
-ENTRYPOINT ["python", "mian.py"]
+ENTRYPOINT ["python", "main.py"]
 
 # 设置用户为 root
 USER root
