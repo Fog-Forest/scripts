@@ -4,8 +4,6 @@
 
 ## 仓库简介
 
-- **cloudthorn**
-  无头浏览器 API 服务，类似于 Flaresolverr 的增强版，支持自定义请求头。
 - **ddns-scripts**
   简易 DDNS 脚本，兼容 Cloudflare 服务商。
 - **gcp-autostart**
